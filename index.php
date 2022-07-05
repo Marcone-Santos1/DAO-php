@@ -44,9 +44,20 @@ require_once("config.php");
 
 // echo $aluno;
 
+# alterar usuário
+
+// $usuario = new Usuario();
+// $usuario->loadById(39);
+// $usuario->update("Marquinhos do grau", "fjasdnaiohencvsndçfa");
+
+// echo $usuario;
+
+# deletar 
+
 $usuario = new Usuario();
-$usuario->loadById(39);
-$usuario->update("Marquinhos do grau", "fjasdnaiohencvsndçfa");
+$usuario->loadById(38);
+
+$usuario->delete();
 
 echo $usuario;
 
