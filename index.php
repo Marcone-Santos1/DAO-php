@@ -8,10 +8,32 @@ require_once("config.php");
 
 // echo json_encode($usuarios);
 
-$root = new Usuario();
+# carrega um usuário
 
-$root->loadById(8);
+// $root = new Usuario();
 
-echo $root;
+// $root->loadById(8);
+
+// echo $root;
+
+# carrega uma lista de usuários
+
+// $lista = Usuario::getList();
+
+// echo json_encode($lista);
+
+# carrega uma lista de usuário, buscando pelo login
+
+// $search = Usuario::search("Mar");
+
+// echo json_encode($search);
+
+# carrega usuário usando o login e senha
+
+$usuario = new Usuario();
+
+$usuario->login("Marukone", "58785878");
+
+echo $usuario;
 
 ?>
